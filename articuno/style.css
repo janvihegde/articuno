@@ -1,0 +1,377 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e; /* Dark background */
+    color: #ffffff; /* White text */
+    line-height: 1.6;
+    background: radial-gradient(#273b40, #3c4748, #1d1d1d);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Header */
+  header {
+    background-color: #1d1d1d; /* Dark gray */
+    padding: 1rem 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #1d9bf0; /* Blue hover */
+    color: #ffffff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 5rem 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero pre {
+    color: #cccccc; /* Light gray */
+    margin-bottom: 2rem;
+    padding: 2rem;
+    font-size: larger;
+    text-align: center;
+    margin: 2px;
+  }
+  
+  .hero .btn {
+    display: inline-block;
+    background-color: #1d9bf0; /* Blue button */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    background-color: #1474b8; /* Darker blue */
+  }
+  
+  /* Featured Section */
+  .featured {
+    padding: 2rem 1rem;
+    
+  }
+  
+  .featured h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .featured .grid {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .card {
+    background-size: cover;
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: #ffffff;
+  padding: 2rem;
+  text-align: left;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+  }
+
+  .card:hover{
+    transform: scale(1.1); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  }
+
+ 
+  
+  .card h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card p {
+    color: #cccccc; /* Light gray */
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+ 
+  .scrolling-images-container {
+    position: relative;
+    width: 200%; /* Double the width for seamless scrolling */
+    height: 100vh; /* Full screen height */
+    display: flex;
+    animation: scroll-images 15s linear infinite; /* Controls speed and repetition */
+  }
+
+  .scrolling-images-container img {
+    height: 100%; /* Images take the full height of the viewport */
+    width: auto; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent shrinking */
+  }
+
+  @keyframes scroll-images {
+    from {
+      transform: translateX(0); /* Start at normal position */
+    }
+    to {
+      transform: translateX(-50%); /* Move left by 50% of the width */
+    }
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    z-index: 1; /* Keep the content on top of images */
+  }
+
+  .content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: -1; /* Behind the text */
+    border-radius: 12px; /* Optional: rounded corners */
+  }
+
+  .content h1 {
+    font-size: 3em;
+    margin: 0;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  .btn {
+    display: inline-block;
+    background-color: #1d9bf0; /* Blue button */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .content .btn:hover {
+    background-color: #1474b8; /* Darker blue */
+  }
+
+  .content h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  .content p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  footer {
+    
+    bottom: 0;
+    width: 100%;
+    background-color: #1d1d1d;
+    padding: 1rem 0;
+    text-align: center;
+    color: #cccccc;
+    
+    
+    
+  }
+
+    .foot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .parallax-section {
+   justify-content:space-between;
+    height: 100vh; /* Full screen height */
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5ace0962e74940289676333a/1723257501234-KTHL2IQ9VB2QVUDQ3HOT/background%252B14.jpg?format=2500w'); /* Replace with your image URL */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+  .search-bar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+
+  .search-bar input {
+    width: 200px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+  }
+
+  .search-result {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .search-result .game-card {
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  .search-result .game-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  .search-result .game-card h4 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .search-result .game-card p {
+    font-size: 12px;
+  }
+
+  
+
+
+.contact-form {
+    width: 600px; /* Wider form for better readability */
+    margin: 2rem auto;
+    background-color: #273b40; /* Dark background */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Slight shadow for depth */
+}
+.form-group {
+    margin-bottom: 40px;
+  }
+.form-group input,
+.form-group textarea {
+    width: 90%; /* Full width */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444; /* Darker border for consistency */
+    border-radius: 8px;
+    background-color: #1a1a2e; /* Match overall theme */
+    color: #ffffff; /* White text for contrast */
+    margin-bottom: 1rem; /* Add space between inputs */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1d9bf0; /* Blue focus effect */
+    background-color: #273b40; /* Slightly lighter background */
+}
+.form-group label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ffffff; /* White for visibility */
+    margin-bottom: 0.5rem;
+    display: block;
+}
+textarea {
+    resize: vertical;
+  }
+.submit-btn {
+    background-color: #1d9bf0; /* Blue button */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1474b8; /* Darker blue */
+    transform: scale(1.05); /* Subtle scaling effect */
+}
+.contudiv{
+    height: 125vh; /* Full screen height */
+    background-image: url('https://media.istockphoto.com/id/1247569904/vector/arrows-light-blue-abstract-futuristic-speed-on-black-background-vector-illustration.jpg?s=612x612&w=0&k=20&c=FsTw_Yq6QkfYQems8ysJtzE8kbMAR3x1_dv7TrwBqdI='); /* Replace with your image URL */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+

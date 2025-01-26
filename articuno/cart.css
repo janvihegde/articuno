@@ -1,0 +1,94 @@
+.cart-section {
+    padding: 48px 0;
+    justify-content:space-between;
+    height: 100vh; /* Full screen height */
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5ace0962e74940289676333a/1723257501234-KTHL2IQ9VB2QVUDQ3HOT/background%252B14.jpg?format=2500w'); /* Replace with your image URL */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1d1d1d;
+    border-radius: 8px;
+  }
+
+  .cart-table th, .cart-table td {
+    padding: 16px;
+    text-align: left;
+  }
+
+  .cart-table th {
+    border-bottom: 1px solid #4a5568;
+  }
+
+  .cart-table td {
+    border-bottom: 1px solid #4a5568;
+  }
+
+  .quantity-input {
+    width: 64px;
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  .remove-btn {
+    background-color: #f56565;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .remove-btn:hover {
+    background-color: #e53e3e;
+  }
+
+  .total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1d1d;
+    padding: 24px;
+    border-radius: 8px;
+    margin-top: 32px;
+  }
+
+  .total-container h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .checkout-btn {
+    background-color: #3182ce;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .checkout-btn:hover {
+    background-color: #2b6cb0;
+  }

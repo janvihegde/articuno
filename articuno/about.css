@@ -1,0 +1,104 @@
+body {
+    height: 125vh; /* Full screen height */
+    background-image: url('https://media.istockphoto.com/id/1247569904/vector/arrows-light-blue-abstract-futuristic-speed-on-black-background-vector-illustration.jpg?s=612x612&w=0&k=20&c=FsTw_Yq6QkfYQems8ysJtzE8kbMAR3x1_dv7TrwBqdI='); /* Replace with your image URL */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: #f0f0f0;
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  
+
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    
+   
+    margin: 40px 10px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .hero h2 {
+    font-size: 3rem;
+    color: #ff3399; /* Neon Pink */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #ff3399, 0 0 20px #ff3399, 0 0 30px #ff3399;
+    animation: pulse 1.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      text-shadow: 0 0 10px #ff3399, 0 0 20px #ff3399, 0 0 30px #ff3399;
+    }
+    100% {
+      transform: scale(1.1);
+      text-shadow: 0 0 20px #ff3399, 0 0 40px #ff3399, 0 0 60px #ff3399;
+    }
+  }
+
+  /* Section Text */
+  .hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #cccccc;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .hero p b {
+    color: #ffcc00;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 0 0 15px #ffcc00, 0 0 25px #ffcc00;
+  }
+
+  .hero p:nth-of-type(odd) {
+    animation: slideLeft 1.5s ease-out;
+  }
+
+  .hero p:nth-of-type(even) {
+    animation: slideRight 1.5s ease-out;
+  }
+
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideRight {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+  
+ 

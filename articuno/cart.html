@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Store - Cart</title>
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+  <header class="header">
+    <div class="container">
+      <h1 class="header-title">Game Store</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="store.html" class="nav-link">Store</a></li>
+          <li><a href="cart.html" class="nav-link">Cart</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="cart-section">
+    <div class="container">
+      <h2 class="section-title">Your Cart</h2>
+      <div class="table-container">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Game</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Game Title 1</td>
+              <td>$29.99</td>
+              <td>
+                <input type="number" min="1" value="1" class="quantity-input">
+              </td>
+              <td>$29.99</td>
+              <td>
+                <button class="remove-btn">Remove</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Game Title 2</td>
+              <td>$49.99</td>
+              <td>
+                <input type="number" min="1" value="1" class="quantity-input">
+              </td>
+              <td>$49.99</td>
+              <td>
+                <button class="remove-btn">Remove</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="total-container">
+        <h3>Total: $79.98</h3>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Gaming Odyssey. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

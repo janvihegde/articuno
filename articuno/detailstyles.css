@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+    color: white;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5ace0962e74940289676333a/1723257501234-KTHL2IQ9VB2QVUDQ3HOT/background%252B14.jpg?format=2500w'); /* Replace with your image URL */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Styles */
+  
+  /* Main Content */
+  .main-content {
+    padding: 2rem 0;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .game-image {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .game-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .game-description {
+    color: #cbd5e0;
+    margin-bottom: 1rem;
+  }
+  
+  .game-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #63b3ed;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #3182ce;
+  }
+  
+  /* Additional Info */
+  .additional-info {
+    background-color: #2d3748;
+    padding: 2rem 0;
+    margin-top: 2rem;
+  }
+  
+  .additional-info h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .info-list {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #cbd5e0;
+  }
+  
+  .info-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #2d3748;
+    padding: 1rem 0;
+    text-align: center;
+  }
